@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>&#8984; &#8629;</title>
+	</head>
+	<script type="text/javascript">
+		function submitIfCommandEnter(e, element) {
+			if (e.metaKey && e.keyCode == '13') {
+				element.parentNode.submit();
+			}
+		}
+			
+	</script>
+	<body>
+		<p>Command + Enter to submit form from text field. This is the way it should be (everywhere).</p>
+		<form action="#submit" method="get" accept-charset="utf-8">
+			<textarea onkeypress="submitIfCommandEnter(event, this)"></textarea>
+
+			<p><input type="submit" value="Continue &rarr;"></p>
+		</form>
+	</body>
+</html>
